@@ -2,9 +2,9 @@ import './public-path'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 const { name } = require('../package.json')
-console.log(name, 'name')
+
 function render(props) {
   const { container } = props
   ReactDOM.render(

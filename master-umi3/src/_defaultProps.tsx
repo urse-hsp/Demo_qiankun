@@ -38,6 +38,10 @@ const route = [
         name: 'vue2',
         path: '/vue2',
       },
+      {
+        name: 'vue3',
+        path: '/app-vue3',
+      },
     ],
   },
   {

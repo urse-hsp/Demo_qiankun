@@ -12,18 +12,25 @@ export const Microconfig = [
   //   activeRule: '/react',
   //   loader,
   // },
-  // {
-  //   name: 'vue2',
-  //   entry: 'http://localhost:8010',
-  //   container: '#subContainer',
-  //   activeRule: '/vue2',
-  //   loader,
-  // },
+  {
+    name: 'vue2',
+    entry: 'http://localhost:8010',
+    container: '#subContainer',
+    activeRule: '/vue2',
+    loader,
+  },
   {
     name: 'reactjs',
     entry: 'http://localhost:8011/',
     container: '#subContainer',
     activeRule: '/reactjs',
+    loader,
+  },
+  {
+    name: 'vue3',
+    entry: 'http://localhost:8012',
+    container: '#subContainer',
+    activeRule: '/app-vue3',
     loader,
   },
 ];

@@ -2,7 +2,8 @@
 const loader = (loading: boolean) => {
   console.log('loading', loading);
 };
-
+// 微应用的名称 package.json => name 需要和主应用中注册时的 name 相对应，且必须确保唯一。
+// activeRule应用路由路径
 export const Microconfig = [
   // {
   //   name: 'react',
@@ -11,11 +12,18 @@ export const Microconfig = [
   //   activeRule: '/react',
   //   loader,
   // },
+  // {
+  //   name: 'vue2',
+  //   entry: 'http://localhost:8010',
+  //   container: '#subContainer',
+  //   activeRule: '/vue2',
+  //   loader,
+  // },
   {
-    name: 'vue2',
-    entry: 'http://localhost:8010',
+    name: 'reactjs',
+    entry: 'http://localhost:8011/',
     container: '#subContainer',
-    activeRule: '/vue2',
+    activeRule: '/reactjs',
     loader,
   },
 ];

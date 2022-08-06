@@ -3,11 +3,12 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-
+const { name } = require('../package.json')
+console.log(name, 'name')
 function render(props) {
   const { container } = props
   ReactDOM.render(
-    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? '/react' : '/'}>
+    <BrowserRouter basename={window.__POWERED_BY_QIANKUN__ ? name : '/'}>
       <App />
     </BrowserRouter>,
     container ? container.querySelector('#root') : document.querySelector('#root')

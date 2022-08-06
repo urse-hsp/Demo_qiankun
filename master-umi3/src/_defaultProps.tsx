@@ -40,6 +40,16 @@ const route = [
       },
     ],
   },
+  {
+    path: '/React',
+    name: 'React',
+    routes: [
+      {
+        name: 'reactjs',
+        path: '/reactjs',
+      },
+    ],
+  },
 ];
 // mock
 export const mockData = () => {

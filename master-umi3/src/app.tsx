@@ -95,11 +95,12 @@ const dynamics = (component: string) => {
 const parseRoutes = (authRoutes: any[]) => {
   if (authRoutes.length) {
     const list: any[] = authRoutes.map((item: any) => {
-      return {
+      const obj = {
         ...item,
-        component: dynamics(item.component),
         routes: item.routes ? parseRoutes(item.routes) : [],
       };
+      if (item.component) obj.component = dynamics(item.component);
+      return obj;
     });
     return list;
   }

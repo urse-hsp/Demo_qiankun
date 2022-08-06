@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "reactjs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,11 +10,11 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "4.0.3",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "set PORT=8003&&rescripts start",
+    "start": "set PORT=8011&&rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "rescripts eject"

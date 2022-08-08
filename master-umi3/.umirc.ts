@@ -8,7 +8,7 @@ export default defineConfig({
   },
   layout: {
     locale: true,
-    siderWidth: 208,
+    siderWidth: 110,
     // ...defaultSettings,
   },
   nodeModulesTransform: {

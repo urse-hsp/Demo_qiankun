@@ -16,5 +16,12 @@ activeRule: '/react1', // 应用注册对应 主应用的路由
 loader,
 },
 
+主应用路由 path 需要跟 qiankun 中注册的 name,activeRule 三者需要一致
 
-主应用路由 path  需要跟qiankun中注册的 name,activeRule三者需要一致
+# master-umi3 qiankun 插件形式实现
+
+# master-umi4-pro umi 内部 qiankun 插件实现
+
+1、子应用 umi 下载插件后，一键可开启配置
+2、umi 开启微前端 qiankun.master 注册子应用。qiankun.slave 开启微服务，需要配置 package.name
+3、umi 路由配置中添加microApp属性

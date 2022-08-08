@@ -42,6 +42,8 @@ export const layout: any = ({ initialState, setInitialState }: any) => {
     },
     // loading: true,
     defaultOpenAll: true,
+    logo: 'https://gw.alipayobjects.com/zos/bmw-prod/8a74c1d3-16f3-4719-be63-15e467a68a24/km0cv8vn_w500_h500.png',
+    title: 'qiankun',
     onPageChange: () => {
       // 页面切换时触发
       console.log('onPageChange');

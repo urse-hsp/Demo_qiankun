@@ -52,6 +52,17 @@ const route = [
       },
     ],
   },
+  {
+    path: '/Umi',
+    name: 'Umi',
+    routes: [
+      {
+        name: 'umi3',
+        path: '/app-umi3',
+        microApp: 'app-umi3'
+      },
+    ],
+  },
   // {
   //   path: '/',
   //   redirect: '/system',

@@ -2,7 +2,7 @@
 
 <!-- qiankuun  -->
 
-# React react-scripts@5.0.1运行错误 导致项目无法启动 安装的@4.0.3 版本
+# React react-scripts@5.0.1运行错误 导致项目无法启动 安装的react-scripts@4.0.3 版本
 
 # Vue vue-router@4.x 运行错误，导致项目无法启动 安装的@3.5.2 版本
 
@@ -15,3 +15,6 @@ container: '#subContainer', // 主应用模板 id
 activeRule: '/react1', // 应用注册对应 主应用的路由
 loader,
 },
+
+
+主应用路由 path  需要跟qiankun中注册的 name,activeRule三者需要一致

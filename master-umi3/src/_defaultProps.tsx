@@ -21,16 +21,6 @@ export const _defaultProps = {
 };
 const route = [
   {
-    path: '/main',
-    name: 'main',
-    component: '@/pages/main',
-  },
-  {
-    path: '/home',
-    name: 'home',
-    component: '@/pages/home',
-  },
-  {
     path: '/Vue',
     name: 'Vue',
     routes: [
@@ -40,7 +30,7 @@ const route = [
       },
       {
         name: 'vue3',
-        path: '/app-vue3',
+        path: '/vue3-ts',
       },
     ],
   },

@@ -111,7 +111,7 @@ const parseRoutes = (authRoutes: any[]) => {
 let extraRoutes: any;
 export function patchRoutes({ routes }: any) {
   if (extraRoutes && extraRoutes.length && routes && routes.length) {
-    console.log(extraRoutes, 444);
+    console.log(extraRoutes, 444,routes);
     routes[0].routes.push(...extraRoutes);
   }
 }

@@ -6,10 +6,10 @@ function resolve(dir) {
 }
 
 module.exports = {
-  // filenameHashing: true,
-  // lintOnSave: process.env.NODE_ENV !== 'production',
-  // runtimeCompiler: true,
-  // productionSourceMap: false,
+  filenameHashing: true,
+  lintOnSave: process.env.NODE_ENV !== 'production',
+  runtimeCompiler: true,
+  productionSourceMap: false,
   devServer: {
     hot: true,
     disableHostCheck: true,
@@ -24,11 +24,11 @@ module.exports = {
   },
   // 自定义webpack配置
   configureWebpack: {
-    // resolve: {
-    //   alias: {
-    //     '@': resolve('src'),
-    //   },
-    // },
+    resolve: {
+      alias: {
+        '@': resolve('src'),
+      },
+    },
     // 让主应用能正确识别微应用暴露出来的一些信息
     output: {
       library: `${name}-[name]`,

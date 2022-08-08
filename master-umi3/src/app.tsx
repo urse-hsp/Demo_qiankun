@@ -41,6 +41,7 @@ export const layout: any = ({ initialState, setInitialState }: any) => {
       content: initialState?.currentUser?.name,
     },
     // loading: true,
+    defaultOpenAll: true,
     onPageChange: () => {
       // 页面切换时触发
       console.log('onPageChange');
@@ -111,8 +112,9 @@ const parseRoutes = (authRoutes: any[]) => {
 let extraRoutes: any;
 export function patchRoutes({ routes }: any) {
   if (extraRoutes && extraRoutes.length && routes && routes.length) {
-    console.log(extraRoutes, 444,routes);
+    console.log(extraRoutes, 444, routes);
     routes[0].routes.push(...extraRoutes);
+    // routes[0].routes[1].routes.push(...extraRoutes);
   }
 }
 // render可以判断是否登录，最先执行的

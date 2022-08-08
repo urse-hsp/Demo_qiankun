@@ -26,4 +26,11 @@ export const Microconfig = [
     activeRule: '/vue3-ts',
     loader,
   },
+  {
+    name: 'react-ts',
+    entry: 'http://localhost:8013/',
+    container: '#subContainer',
+    activeRule: '/react-ts',
+    loader,
+  },
 ];

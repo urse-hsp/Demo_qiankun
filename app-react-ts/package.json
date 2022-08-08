@@ -1,5 +1,5 @@
 {
-  "name": "qiankun-demo-ts",
+  "name": "react-ts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,11 +13,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
+    "react-scripts": "4.0.3",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "rescripts start",
+    "start": "set PORT=8013&&rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
     "eject": "rescripts eject"

@@ -32,6 +32,10 @@ const route = [
         name: 'vue3',
         path: '/vue3-ts',
       },
+      {
+        name: 'vue3-about',
+        path: '/vue3-ts/about',
+      },
     ],
   },
   {
@@ -42,7 +46,19 @@ const route = [
         name: 'reactjs',
         path: '/reactjs',
       },
+      {
+        name: 'react-ts',
+        path: '/react-ts',
+      },
     ],
+  },
+  // {
+  //   path: '/',
+  //   redirect: '/system',
+  // },
+  {
+    path: '*',
+    component: './404',
   },
 ];
 // mock

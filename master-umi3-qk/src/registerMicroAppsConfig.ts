@@ -21,7 +21,7 @@ export const Microconfig = [
   },
   {
     name: 'vue3-ts',
-    entry: 'localhost:8012',
+    entry: '//localhost:8012',
     container: '#subContainer',
     activeRule: '/vue3-ts',
     loader,

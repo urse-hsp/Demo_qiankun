@@ -24,10 +24,9 @@ loader,
 
 1、子应用 umi 下载插件后，一键可开启配置
 2、umi 开启微前端 qiankun.master 注册子应用。qiankun.slave 开启微服务，需要配置 package.name
-3、umi 路由配置中添加microApp属性
-
+3、umi 路由配置中添加 microApp 属性
 
 给子应用传递数据
-1 url
-2 本地缓存
+1 url： 子应用获取 url 后的参数
+2 本地缓存: 父子应用，子应用的本地缓存使用的是主应用的。嵌套级应用缓存都是主应用的。
 3 父子应用通讯

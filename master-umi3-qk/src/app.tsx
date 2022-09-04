@@ -123,6 +123,12 @@ export function patchRoutes({ routes }: any) {
 export async function render(oldRender: any) {
   const list = await loopMenuItem();
   extraRoutes = list;
+  // const token = window.localStorage.getItem('token')
+  // if(!token) {
+  // }
+  // console.log(token,'token');
+  window.localStorage.setItem('token-master', 'token-123');
+
   oldRender();
 
   // // 渲染之前做权限校验，

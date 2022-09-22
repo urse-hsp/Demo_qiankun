@@ -1,4 +1,4 @@
-import { dynamic } from 'umi';
+import { dynamic, MicroApp } from 'umi';
 import { mockData } from './_defaultProps';
 
 // 路由请求
@@ -41,7 +41,7 @@ export const layout: any = ({ initialState, setInitialState }: any) => {
       return (
         <>
           {children}
-          <div id="subContainer"></div>
+          {/* <MicroApp id="vue3-ts"></MicroApp> */}
         </>
       );
     },
@@ -93,8 +93,8 @@ export function patchRoutes({ routes }: any) {
 }
 // render可以判断是否登录，最先执行的
 export async function render(oldRender: any) {
-  const list = await loopMenuItem();
-  extraRoutes = list;
+  // const list = await loopMenuItem();
+  // extraRoutes = list;
   oldRender();
 
   // // 渲染之前做权限校验，

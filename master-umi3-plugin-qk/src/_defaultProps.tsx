@@ -29,8 +29,9 @@ const route = [
         path: '/vue2',
       },
       {
-        name: 'vue3',
+        name: 'vue3-ts',
         path: '/vue3-ts',
+        microApp: 'app1',
       },
       {
         name: 'vue3-about',

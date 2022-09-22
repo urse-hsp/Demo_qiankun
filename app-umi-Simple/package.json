@@ -1,6 +1,6 @@
 {
   "private": true,
-  "author":"侯少平 <hsp_email@163.com>",
+  "author": "侯少平 <hsp_email@163.com>",
   "scripts": {
     "dev": "umi dev",
     "build": "umi build",
@@ -14,6 +14,7 @@
   "devDependencies": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@umijs/plugin-qiankun": "^2.40.0",
     "typescript": "^4.1.2"
   }
 }

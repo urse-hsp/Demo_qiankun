@@ -1,3 +1,6 @@
 export default {
-  npmClient: 'yarn'
-};
+  npmClient: 'yarn',
+  qiankun: {
+    slave: {},
+  },
+}

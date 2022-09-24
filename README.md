@@ -6,14 +6,13 @@
 
 # Vue vue-router@4.x 运行错误，导致项目无法启动 安装的@3.5.2 版本
 
-# 子应用注册
-
+# 子应用注册 qiankun外插件注册方式
 {
-name: 'reactjs', // 对应子应用 package > name
-entry: 'http://localhost:8011/', // 子应用地址
-container: '#subContainer', // 主应用模板 id
-activeRule: '/react1', // 应用注册对应 主应用的路由
-loader,
+  name: 'reactjs', // 对应子应用 package > name
+  entry: 'http://localhost:8011/', // 子应用地址
+  container: '#subContainer', // 主应用模板 id
+  activeRule: '/react1', // 应用注册对应 主应用的路由
+  loader,
 },
 
 主应用路由 path 需要跟 qiankun 中注册的 name,activeRule 三者需要一致
@@ -28,9 +27,10 @@ loader,
 
 给子应用传递数据
 1 url： 子应用获取 url 后的参数
-2 本地缓存: 父子应用，子应用的本地缓存使用的是主应用的。嵌套级应用缓存都是主应用的。
+2 本地缓存: 用父子应用，子应的本地缓存使用的是主应用的。嵌套级应用缓存都是主应用的。
 3 父子应用通讯
 
 
 umi主应用，umi子应用MicroApp可以指定模块显示子应用内容
 不需要统一子应用里package.name名字
+路由绑定的方式 1写入配置路由中 2app.ts 动态覆盖qiankun 方法返回数据

@@ -107,17 +107,6 @@ export async function render(oldRender: any) {
   //   }
   // });
 }
-// export const qiankun = fetch('/config').then(({ apps }) => {
-//   return {
-//     apps,
-//     routes: [
-//       {
-//         path: '/app1',
-//         microApp: 'app1',
-//       },
-//     ],
-//   };
-// });
 
 export const qiankun = {
   // apps,

@@ -58,9 +58,8 @@ const route = [
     name: 'Umi',
     routes: [
       {
-        name: 'umi3',
-        path: '/app-umi3',
-        microApp: 'app-umi3'
+        name: 'app1name',
+        path: '/app1',
       },
     ],
   },

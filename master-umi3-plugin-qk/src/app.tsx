@@ -93,8 +93,8 @@ export function patchRoutes({ routes }: any) {
 }
 // render可以判断是否登录，最先执行的
 export async function render(oldRender: any) {
-  // const list = await loopMenuItem();
-  // extraRoutes = list;
+  const list = await loopMenuItem();
+  extraRoutes = list;
   oldRender();
 
   // // 渲染之前做权限校验，
@@ -107,3 +107,24 @@ export async function render(oldRender: any) {
   //   }
   // });
 }
+// export const qiankun = fetch('/config').then(({ apps }) => {
+//   return {
+//     apps,
+//     routes: [
+//       {
+//         path: '/app1',
+//         microApp: 'app1',
+//       },
+//     ],
+//   };
+// });
+
+export const qiankun = {
+  // apps,
+  routes: [
+    {
+      path: '/app1',
+      microApp: 'app1',
+    },
+  ],
+};

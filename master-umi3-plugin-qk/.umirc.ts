@@ -1,21 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-  qiankun: {
-    master: {
-      prefetch: false,
-      apps: [
-        // {
-        //   name: 'app1', // 唯一 id
-        //   entry: '//localhost:7001', // html entry
-        // },
-        // {
-        //   name: 'app2', // 唯一 id
-        //   entry: '//localhost:7002', // html entry
-        // },
-      ],
-    },
-  },
+
   fastRefresh: {},
   mfsu: {},
   layout: {

@@ -29,7 +29,9 @@ if (!window.__POWERED_BY_QIANKUN__) {
   render()
 }
 
-export async function bootstrap() {
+export async function bootstrap(props) {
+  console.log(props,'bootstrap');
+  
   console.log('%c ', 'color: green;', 'vue3.0 app bootstraped')
 }
 

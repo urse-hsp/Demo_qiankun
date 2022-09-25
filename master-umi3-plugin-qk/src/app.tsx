@@ -1,4 +1,5 @@
 import { dynamic, MicroApp } from 'umi';
+import { useState } from 'react';
 import { mockData } from './_defaultProps';
 
 // 路由请求
@@ -41,7 +42,7 @@ export const layout: any = ({ initialState, setInitialState }: any) => {
       return (
         <>
           {children}
-          {/* <MicroApp id="vue3-ts"></MicroApp> */}
+          {/* <MicroApp id="app1"></MicroApp> */}
         </>
       );
     },
@@ -109,11 +110,51 @@ export async function render(oldRender: any) {
 }
 
 export const qiankun = {
-  // apps,
+  // apps, 注册
+  apps: [
+    {
+      name: 'app1', // 唯一 id
+      entry: '//localhost:8014',
+      props: {
+        onClick: (event) => console.log(event),
+        name: 'xx',
+        age: 1,
+      },
+    },
+    {
+      name: 'vue3', // 唯一 id
+      entry: '//localhost:8012',
+      props: {
+        onClick: (event) => console.log(event),
+        name: 'xx',
+        age: 1,
+        type: 'vue',
+      },
+    },
+  ],
+  // 路由 路由列表，配置name显示在菜单中
   routes: [
     {
+      // name: 'app1',
       path: '/app1',
       microApp: 'app1',
     },
+    {
+      path: '/vue3-ts',
+      microApp: 'vue3',
+    },
   ],
+  lifeCycles: {
+    afterMount: (props) => {
+      console.log('lifeCycles', props);
+    },
+  },
 };
+
+// export function useQiankunStateForSlave() {
+//   const [masterState, setMasterState] = useState(1);
+//   return {
+//     masterState,
+//     setMasterState,
+//   };
+// }

@@ -5,13 +5,23 @@ export default defineConfig({
     master: {
       // 注册子应用信息
       apps: [
-        {
-          name: 'app1', // 唯一 id
-          entry: '//localhost:8014', // html entry
-        },
         // {
-        //   name: 'app2', // 唯一 id
-        //   entry: '//localhost:7002', // html entry
+        //   name: 'app1', // 唯一 id
+        //   entry: '//localhost:8014', // html entry
+        //   // props: {
+        //   //   onClick: (event) => console.log(event),
+        //   //   name: 'xx',
+        //   //   age: 1,
+        //   // },
+        // },
+        // {
+        //   name: 'vue3', // 唯一 id
+        //   entry: '//localhost:8012',
+        //   props: {
+        //     onClick: (event) => console.log(event),
+        //     name: 'xx',
+        //     age: 1,
+        //   },
         // },
       ],
     },

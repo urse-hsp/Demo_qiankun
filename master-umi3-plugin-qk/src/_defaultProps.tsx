@@ -31,7 +31,6 @@ const route = [
       {
         name: 'vue3-ts',
         path: '/vue3-ts',
-        microApp: 'app1',
       },
       {
         name: 'vue3-about',
@@ -58,8 +57,8 @@ const route = [
     name: 'Umi',
     routes: [
       {
-        name: 'app1name',
         path: '/app1',
+        microApp: 'app1',
       },
     ],
   },
